@@ -25,9 +25,9 @@ for n in range(len(array1)):
     for i in dict1:
         if i in array1[n]:
             if i == "Default Gateway . . . . . . . . .":
-                dict1[i.strip()] = [array1[n].split(i)[1].strip(":").strip().strip(":").strip(), array1[n+1].strip()]
+                dict1[i.strip()] = [array1[n].split(i)[1].strip(": : "), array1[n+1].strip()]
             else:
-                dict1[i.strip()] = array1[n].split(i)[1].strip(":").strip().strip(":").strip()
+                dict1[i.strip()] = array1[n].split(i)[1].strip(": : ")
             
                
 print(dict1)
